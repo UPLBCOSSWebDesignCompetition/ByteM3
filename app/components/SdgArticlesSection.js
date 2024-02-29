@@ -19,7 +19,7 @@ function MainTitle() {
 
 function ArtileComponent1(){
     return (
-        <div class = "grid gap-8 lg:grid-cols-2">
+        <div class ="grid gap-8 lg:grid-cols-2">
             <article class="px-10 mb-10">
                 <div className="article-title my-3">
                     <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</a></h2>
@@ -28,7 +28,7 @@ function ArtileComponent1(){
                     <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
                 </div>
                 <div className="article-image">
-                    <img class = "object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
+                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
                 </div>
                 
             </article>
@@ -41,7 +41,7 @@ function ArtileComponent1(){
                     <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
                 </div>
                 <div className="article-image">
-                    <img class = "object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
+                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
                 </div>
             </article>
         </div>
@@ -50,9 +50,9 @@ function ArtileComponent1(){
 
 function ArticleComponent(){
     return (
-        <article class = "my-10">
-            <div class = "container flex-row flex gap-10">
-                <div class = "image">
+        <article class="my-10">
+            <div class="container flex-row flex gap-10">
+                <div class="image">
                 {/* <Image
                     loader={imageLoader}
                     src="me.png"
@@ -60,9 +60,9 @@ function ArticleComponent(){
                     width={500}
                     height={500}
                     /> */}
-                    <img class = "object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
+                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
                 </div>
-                <div class = "text">
+                <div class="text">
                     <div className="article-title my-3">
                         <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</a></h2>
                     </div>
