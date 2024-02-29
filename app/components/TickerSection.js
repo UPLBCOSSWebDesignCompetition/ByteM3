@@ -7,7 +7,7 @@ const kTickerNodes = [
 function TickerNode(aProps) {
     const { label } = aProps;
     return (
-        <div className="text-5xl font-zen-dots whitespace-nowrap px-5">
+        <div className="text-7xl font-zen-dots whitespace-nowrap px-5">
         {label}
         </div>
     )
