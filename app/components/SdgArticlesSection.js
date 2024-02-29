@@ -1,5 +1,12 @@
 import Image from 'next/image'
 
+// function to say "see more"  when character length is more than 100
+function seeMore(text, length) {
+    if (text.length > length) {
+        return text.substring(0, length) + '...';
+    }
+    return text;
+}
 
 function MainTitle() {
     return (
@@ -51,7 +58,7 @@ function ArtileComponent1(){
 function ArticleComponent(){
     return (
         <article class="my-10">
-            <div class="container flex-row flex gap-10">
+            <div class="container flex-row flex gap-10 grid lg:grid-cols-2">
                 <div class="image">
                 {/* <Image
                     loader={imageLoader}
@@ -65,6 +72,12 @@ function ArticleComponent(){
                 <div class="text">
                     <div className="article-title my-3">
                         <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</a></h2>
+                    </div>
+                    <div className="article-date my-4">
+                        <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
+                    </div>
+                    <div className="article-content my-4">
+                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">The United Nations is a global organization that brings together its member states to confront common challenges, manage shared responsibilities and exercise collective action in an enduring quest for a peaceful, inclusive and sustainably dev.. <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
                     </div>
                 </div>
             </div>
