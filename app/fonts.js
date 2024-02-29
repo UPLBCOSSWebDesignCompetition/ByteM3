@@ -1,4 +1,4 @@
-import { Inter, Bebas_Neue } from "next/font/google";
+import { Inter, Bebas_Neue, Zen_Dots } from "next/font/google";
 
 const inter = Inter({
     subsets: ["latin"]
@@ -10,4 +10,10 @@ const bebas = Bebas_Neue({
     variable: "--font-bebas-neue",
 });
 
-export { inter, bebas };
+const zenDots = Zen_Dots({
+    subsets: ["latin"],
+    weight: ["400"],
+    variable: "--font-zen-dots",
+});
+
+export { inter, bebas, zenDots };
