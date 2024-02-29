@@ -22,4 +22,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .grid-area-1 {
+    grid-area: 1/1;
+  }
 }
