@@ -1,4 +1,4 @@
-[
+const articleData = [
     {
       "article_title":"Take urgent action to combat climate change and its impacts",
       "article_date":"February 14, 2022",
@@ -18,3 +18,5 @@
       "article_description": "The existing challenges in achieving education targets, is worsened by the COVID-19 pandemic, which has further disrupted progress. Without additional measures, only a small fraction of countries will meet Sustainable Development Goal 4 (SDG4) by 2030, leaving millions of children without access to quality education and lacking essential numeracy and literacy skills. Despite some improvements in school completion rates, progress has slowed, and learning levels have stagnated, with documented losses due to pandemic-related school closures. Access to pre-primary education remains limited, and participation in education and training for youth and adults is insufficient. Basic school infrastructure and teacher qualifications are also highlighted as areas needing attention. Reimagining education systems and prioritizing education financing are crucial for achieving SDG4 effectively."
     }
   ]
+
+export default articleData;
