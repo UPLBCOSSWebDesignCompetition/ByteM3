@@ -77,7 +77,7 @@ function ArticleComponent() {
                             </div>
                             <div class="text">
                                 <div className="article-title  my-3">
-                                    <h2 class="text-5xl font-extrabold  dark:text-white">
+                                    <h2 class="text-4xl font-extrabold  dark:text-white">
                                         <a href="#">{article.article_title}</a>
                                     </h2>
                                 </div>
@@ -85,7 +85,7 @@ function ArticleComponent() {
                                     <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">{article.article_date}</span>
                                 </div>
                                 <div className="article-content  my-4">
-                                    <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 550)} <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
+                                    <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 30)}… <span className="underline text-gray-300 cursor-pointer">See more...</span></p>
                                 </div>
                             </div>
                         </div>
