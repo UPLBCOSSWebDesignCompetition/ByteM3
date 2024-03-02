@@ -36,7 +36,6 @@ function ArticleComponent1(){
                 <div className="article-image">
                     <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
                 </div>
-                
             </article>
 
             <article class="px-10">
@@ -54,34 +53,46 @@ function ArticleComponent1(){
     );
 }
 
-function ArticleComponent(){
-    const articleContent = "The world faces an imminent climate crisis, with current actions insufficient to prevent catastrophic impacts. Urgent and transformative measures are needed within this decade to significantly reduce greenhouse gas emissions across all sectors to meet the 1.5°C target. Failure to act risks the lives of billions of people, leading to worsening heatwaves, droughts, floods, wildfires, sea-level rise, and famines. Emissions must be nearly halved by 2030 to combat climate change effectively. Despite some progress in disaster risk reduction strategies and climate finance, global temperatures have already exceeded 1.1°C, and emissions continue to rise, surpassing pre-industrial levels. Furthermore, climate change education remains inadequate, with a significant portion of national curriculum frameworks lacking mention of climate change, highlighting the urgent need for comprehensive climate action and education.";
+function ArticleComponent() {
+    const fs = require('fs');
+    const jsonData = fs.readFileSync('app/articles.json', 'utf8');
+    const articles = JSON.parse(jsonData);
 
     return (
-        <article class="my-10">
-            <div class="container flex-row flex gap-10 grid lg:grid-cols-2">
-                <div class="image">
-                    <Image
-                        src="/plant.jpg"
-                        alt="Plant photo"
-                        width={750}
-                        height={500}
-                        priority
-                    />
-                </div>
-                <div class="text">
-                    <div className="article-title my-3">
-                        <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Take urgent action to combat climate change and its impacts</a></h2>
-                    </div>
-                    <div className="article-date my-4">
-                        <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
-                    </div>
-                    <div className="article-content my-4">
-                        <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 650)} <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
-                    </div>
-                </div>
-            </div>
-        </article>
+        <div>
+            {articles.map((article, index) => {
+                const articleContent = article.article_description;
+
+                return (
+                    <article key={index} class="my-10">
+                        <div class="container flex-row flex gap-10 grid lg:grid-cols-2">
+                            <div class="image">
+                                <img
+                                    src={article.article_image}
+                                    alt="Plant photo"
+                                    width={750}
+                                    height={500}
+                                    priority
+                                />
+                            </div>
+                            <div class="text">
+                                <div className="article-title my-3">
+                                    <h2 class="text-5xl font-extrabold dark:text-white">
+                                        <a href="#">{article.article_title}</a>
+                                    </h2>
+                                </div>
+                                <div className="article-date my-4">
+                                    <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
+                                </div>
+                                <div className="article-content my-4">
+                                    <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 650)} <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                );
+            })}
+        </div>
     );
 }
 
@@ -105,7 +116,6 @@ export default function SdgArticlesSection() {
     return (
         <div className="article-main w-full">
             <MainTitle />
-            <ArticleComponent />
             <ArticleComponent />
             <ArticleBottom />
         </div>
