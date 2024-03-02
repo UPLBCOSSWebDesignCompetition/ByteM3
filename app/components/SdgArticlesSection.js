@@ -13,7 +13,7 @@ function MainTitle() {
         <div className="article-top my-20 font ">
             
             <div class="relative flex items-center">
-                <span class="flex-shrink text-gray-400 mr-5"> <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                <span class="flex-shrink text-gray-400 mr-5"> <h1 class="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
                     <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">More from the UN </span></h1>
                 </span>
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
@@ -24,7 +24,7 @@ function MainTitle() {
     );
 }
 
-function ArtileComponent1(){
+function ArticleComponent1(){
     return (
         <div class ="grid gap-8 lg:grid-cols-2">
             <article class="px-10 mb-10">
@@ -67,7 +67,7 @@ function ArticleComponent(){
                     width={500}
                     height={500}
                     /> */}
-                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
+                    <img class="object-cover h-500 w-300 rounded-lg" src="https://picsum.photos/536/354" alt="Article Image" />
                 </div>
                 <div class="text">
                     <div className="article-title my-3">
@@ -77,11 +77,27 @@ function ArticleComponent(){
                         <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
                     </div>
                     <div className="article-content my-4">
-                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">The United Nations is a global organization that brings together its member states to confront common challenges, manage shared responsibilities and exercise collective action in an enduring quest for a peaceful, inclusive and sustainably dev.. <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
+                        <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">The United Nations is a global organization that brings together its member states to confront common challenges, manage shared responsibilities and exercise collective action in an enduring quest for a peaceful, inclusive and sustainably dev.. <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
                     </div>
                 </div>
             </div>
         </article>
+    );
+}
+
+function ArticleBottom(){
+    return (
+        <div className="article-top my-20 font ">
+            
+            <div class="relative flex items-center">
+                <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
+                    <span class="flex-shrink text-gray-400 ml-5 mr-5"> <h3 class="mb-1 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Load More</span></h3>
+                    </span>
+                <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
+            </div> 
+
+        </div>
     );
 }
 
@@ -97,6 +113,7 @@ export default function SdgArticlesSection() {
             <MainTitle />
             <ArticleComponent />
             <ArticleComponent />
+            <ArticleBottom />
         </div>
     );
 }
