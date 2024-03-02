@@ -65,7 +65,7 @@ function ArticleComponent() {
 
                 return (
                     <article key={index} class="my-10">
-                        <div class="container flex-row flex gap-10 grid lg:grid-cols-2">
+                        <div class="container flex-row  gap-10 grid lg:grid-cols-2">
                             <div class="image">
                                 <img
                                     src={article.article_image}
@@ -82,7 +82,7 @@ function ArticleComponent() {
                                     </h2>
                                 </div>
                                 <div className="article-date my-4">
-                                    <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
+                                    <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">{article.article_date}</span>
                                 </div>
                                 <div className="article-content my-4">
                                     <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 650)} <span className="underline text-blue-500 hover:text-blue-700">See more...</span></p>
