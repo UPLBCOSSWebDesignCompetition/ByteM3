@@ -9,8 +9,8 @@ import HeroSection from "./components/HeroSection";
 export default function Home() {
   return (
     <>
+      <Header />
       <main className="flex max-w-5xl flex-col items-center justify-between lg:px-24 px-5 m-auto">
-        <Header />
         <HeroSection />
         <TickerSection />
         <SdgCardsSection />
