@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -32,7 +32,8 @@ function GlassCard(aProps) {
                 <div className="text-7xl">{count}</div>
                 <div className="text-2xl md:text-4xl uppercase">{label}</div>
             </div>
-            <div className="rounded-3xl bg-sky-900 grid-area-1 bg-cover"
+            <div
+                className="rounded-3xl bg-sky-900 grid-area-1 bg-cover"
                 style={{ backgroundImage: `url(${bgImage})` }}>
             </div>
         </div>
@@ -42,11 +43,23 @@ function GlassCard(aProps) {
 function SecondarySdgCard() {
     return (
         <div className="container flex flex-col md:flex-row w-full gap-4">
-            <GlassCard count="230" label="events" bgImage="/events.jpg" />
+            <GlassCard
+                count="230"
+                label="events"
+                bgImage="/events.jpg" />
             <div className="container flex flex-col gap-4">
-                <GlassCard count="2183" label="actions" bgImage="/actions.jpg" />
-                <GlassCard count="74" label="publications" bgImage="/publications.jpg" />
-                <GlassCard count="19" label="targets" bgImage="/targets2.jpg" />
+                <GlassCard
+                    count="2183"
+                    label="actions"
+                    bgImage="/actions.jpg" />
+                <GlassCard
+                    count="74"
+                    label="publications"
+                    bgImage="/publications.jpg" />
+                <GlassCard
+                    count="19"
+                    label="targets"
+                    bgImage="/targets2.jpg" />
             </div>
         </div>
     );
@@ -54,7 +67,9 @@ function SecondarySdgCard() {
 
 export default function SdgCardsSection() {
     return (
-        <AnimationOnScroll animateIn="animate__zoomIn" className="container w-full my-4 flex flex-col gap-6">
+        <AnimationOnScroll
+            animateIn="animate__zoomIn"
+            className="container w-full my-4 flex flex-col gap-6">
             <MainSdgCard />
             <SecondarySdgCard />
         </AnimationOnScroll>

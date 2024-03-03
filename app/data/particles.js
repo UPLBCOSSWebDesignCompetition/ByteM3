@@ -23,18 +23,18 @@ const particleData = {
             direction: "none",
             enable: true,
             outModes: {
-            default:
+                default:
                 "bounce",
             },
             random: false,
             speed: 1,
             straight: false,
             trail: {
-              enable: true,
-              length: 10,
-              fill: {
-                color: ""
-              }
+                enable: true,
+                length: 10,
+                fill: {
+                    color: ""
+                }
             },
         },
         number: {
@@ -51,7 +51,7 @@ const particleData = {
                 polygon: {
                     sides: 5
                 }
-              },
+            },
             type: "line"
         },
         size: {
@@ -64,6 +64,6 @@ const particleData = {
 
     },
     detectRetina: true,
-}
+};
 
 export default particleData;

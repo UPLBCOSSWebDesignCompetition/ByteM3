@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 
@@ -59,9 +59,9 @@ function Cursor() {
 
     return (
         <>
-        { circles }
+            { circles }
         </>
-    )
+    );
 }
 
 export default Cursor;
