@@ -12,7 +12,6 @@ function MainSdgCard() {
                     alt="SDG 17 Logo"
                     width={128}
                     height={128}
-                    priority
                 />
             </div>
             <div className="text-8xl text-right font-bebas w-3/5 self-end leading-none">
