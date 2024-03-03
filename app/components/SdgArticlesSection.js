@@ -14,11 +14,11 @@ function seeMore(text, length) {
 
 function MainTitle() {
     return (
-        <div className="article-top my-20 font ">
+        <div className="article-top my-20 font">
             
-            <div class="relative flex items-center">
-                <span class="flex-shrink text-gray-400 mr-5"> <h1 class="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r to-gray-300 from-slate-50 ">More from the UN </span></h1>
+            <div className="relative flex items-center">
+                <span className="flex-shrink text-gray-400 mr-5"> <h1 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r to-gray-300 from-slate-50">More from the UN </span></h1>
                 </span>
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
             </div> 
@@ -34,9 +34,9 @@ function ArticleComponent() {
                 const articleContent = article.article_description;
                 return (
                     <AnimationOnScroll animateIn="animate__fadeInLeft">
-                        <article key={index} class="my-10">
-                            <div class="container flex-row gap-10 grid lg:grid-cols-2">
-                                <div class="image cursor-pointer">
+                        <article key={index} className="my-10">
+                            <div className="container flex-row gap-10 grid lg:grid-cols-2">
+                                <div className="image cursor-pointer">
                                     <img className = "rounded-3xl"
                                         src={article.article_image}
                                         alt="Plant photo"
@@ -45,17 +45,17 @@ function ArticleComponent() {
                                         priority
                                     />
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <div className="article-title mb-3">
-                                        <h2 class="text-3xl font-extrabold  dark:text-white">
+                                        <h2 className="text-3xl font-extrabold  dark:text-white">
                                             <a href="#">{article.article_title}</a>
                                         </h2>
                                     </div>
                                     <div className="article-date  my-4">
-                                        <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">{article.article_date}</span>
+                                        <span className="font-semibold text-sm text-gray-500 dark:text-gray-400">{article.article_date}</span>
                                     </div>
                                     <div className="article-content  my-4">
-                                        <p class="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 30)}… <span className="underline text-gray-300 cursor-pointer">See more...</span></p>
+                                        <p className="text-lg text-justify font-normal text-gray-500 dark:text-gray-400">{seeMore(articleContent, 30)}… <span className="underline text-gray-300 cursor-pointer">See more...</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -69,12 +69,12 @@ function ArticleComponent() {
 
 function ArticleBottom(){
     return (
-        <div className="article-top my-20 font ">
+        <div className="article-top my-20 font">
             
-            <div class="relative flex items-center cursor-pointer">
+            <div className="relative flex items-center cursor-pointer">
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
-                    <span class="flex-shrink text-gray-400 ml-5 mr-5"> <h3 class="mb-1 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-zinc-100 from-slate-50">Load More</span></h3>
+                    <span className="flex-shrink text-gray-400 ml-5 mr-5"> <h3 className="mb-1 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r to-zinc-100 from-slate-50">Load More</span></h3>
                     </span>
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
             </div> 
