@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import articleData  from '../articles'
+import articleData  from '../data/articles'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 // function to say "see more"  when character length is more than 100
