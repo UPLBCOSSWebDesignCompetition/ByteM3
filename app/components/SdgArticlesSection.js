@@ -27,43 +27,13 @@ function MainTitle() {
     );
 }
 
-function ArticleComponent1(){
-    return (
-        <div class ="grid gap-8 lg:grid-cols-2">
-            <article class="px-10 mb-10">
-                <div className="article-title my-3">
-                    <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</a></h2>
-                </div>
-                <div className="article-date my-4">
-                    <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
-                </div>
-                <div className="article-image">
-                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
-                </div>
-            </article>
-
-            <article class="px-10">
-                <div className="article-title my-3">
-                    <h2 class="text-5xl font-extrabold dark:text-white"><a href="#">Achieve gender equality and empower all women and girls</a></h2>
-                </div>
-                <div className="article-date my-4">
-                    <span class="font-semibold text-sm text-gray-500 dark:text-gray-400">14 days ago</span>
-                </div>
-                <div className="article-image">
-                    <img class="object-cover h-500 w-300" src="https://picsum.photos/536/354" alt="Article Image" />
-                </div>
-            </article>
-        </div>
-    );
-}
-
 function ArticleComponent() {
     return (
-        <AnimationOnScroll animateIn="animate__fadeInLeft">
-            <div>
-                {articleData.map((article, index) => {
-                    const articleContent = article.article_description;
-                    return (
+        <div>
+            {articleData.map((article, index) => {
+                const articleContent = article.article_description;
+                return (
+                    <AnimationOnScroll animateIn="animate__fadeInLeft">
                         <article key={index} class="my-10">
                             <div class="container flex-row gap-10 grid lg:grid-cols-2">
                                 <div class="image cursor-pointer">
@@ -90,10 +60,10 @@ function ArticleComponent() {
                                 </div>
                             </div>
                         </article>
-                    );
-                })}
-            </div>
-        </AnimationOnScroll>
+                    </AnimationOnScroll>
+                );
+            })}
+        </div>
     );
 }
 
