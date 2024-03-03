@@ -33,7 +33,7 @@ function ArticleComponent() {
             {articleData.map((article, index) => {
                 const articleContent = article.article_description;
                 return (
-                    <AnimationOnScroll animateIn="animate__fadeInLeft">
+                    <AnimationOnScroll animateIn="animate__fadeInLeft" key={index}>
                         <article key={index} className="my-10">
                             <div className="container flex-row gap-10 grid lg:grid-cols-2">
                                 <div className="image cursor-pointer">
@@ -42,7 +42,6 @@ function ArticleComponent() {
                                         alt="Plant photo"
                                         width={750}
                                         height={500}
-                                        priority
                                     />
                                 </div>
                                 <div className="text">

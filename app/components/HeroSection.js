@@ -8,6 +8,7 @@ function MainHero(){
                     alt="SDG 17 Logos"
                     width={512}
                     height={512}
+                    priority={true}
                 />
         </div>
     );
