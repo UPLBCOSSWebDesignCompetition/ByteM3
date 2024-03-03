@@ -23,7 +23,7 @@ function handleTickerNodesMap(aItem, aIndex) {
 
 export default function TickerSection() {
     return (
-        <Marquee className="overflow-hidden my-5">
+        <Marquee className="overflow-hidden my-5 animate__animated animate__zoomIn">
             {
                 kTickerNodes.map(handleTickerNodesMap)
             }

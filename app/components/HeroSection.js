@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function MainHero(){
     return(
-        <div className="hero-section flex justify-center items-center my-20">
+        <div className="hero-section flex justify-center items-center my-20 animate__animated animate__zoomIn">
             <Image
                 src="/sdg-logo.png"
                 alt="SDG 17 Logos"
