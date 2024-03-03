@@ -18,7 +18,7 @@ function MainTitle() {
             
             <div class="relative flex items-center">
                 <span class="flex-shrink text-gray-400 mr-5"> <h1 class="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 ">More from the UN </span></h1>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r to-gray-300 from-slate-50 ">More from the UN </span></h1>
                 </span>
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
             </div> 
@@ -74,7 +74,7 @@ function ArticleBottom(){
             <div class="relative flex items-center cursor-pointer">
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
                     <span class="flex-shrink text-gray-400 ml-5 mr-5"> <h3 class="mb-1 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Load More</span></h3>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-zinc-100 from-slate-50">Load More</span></h3>
                     </span>
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
             </div> 
