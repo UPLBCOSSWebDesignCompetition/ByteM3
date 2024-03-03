@@ -1,10 +1,14 @@
+import Image from 'next/image'
+
 function MainHero(){
     return(
-        <div className="hero-section">
-            <div className="container flex flex-col items-center justify-center h-full">
-                <h1 className="text-8xl font-bebas text-white">Sustainable Development Goals</h1>
-                <p className="text-2xl text-white">The 17 Goals to Transform Our World</p>
-            </div>
+        <div className="hero-section flex justify-center items-center my-20">
+            <Image
+                    src="/sdg-logo.png"
+                    alt="SDG 17 Logos"
+                    width={512}
+                    height={512}
+                />
         </div>
     );
 }
