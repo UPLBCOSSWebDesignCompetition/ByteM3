@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import SdgCardsSection from "./components/SdgCardsSection";
 import TickerSection from "./components/TickerSection";
 import SdgArticlesSection from "./components/SdgArticlesSection";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <main className="flex max-w-5xl flex-col items-center justify-between lg:px-24 px-5 m-auto">
+        <Header />
         <HeroSection />
         <TickerSection />
         <SdgCardsSection />
@@ -17,4 +19,4 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+} 
