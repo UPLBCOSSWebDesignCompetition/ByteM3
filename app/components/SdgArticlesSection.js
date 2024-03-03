@@ -59,7 +59,7 @@ function ArticleComponent1(){
 
 function ArticleComponent() {
     return (
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+        <AnimationOnScroll animateIn="animate__fadeInLeft">
             <div>
                 {articleData.map((article, index) => {
                     const articleContent = article.article_description;
@@ -101,7 +101,7 @@ function ArticleBottom(){
     return (
         <div className="article-top my-20 font ">
             
-            <div class="relative flex items-center">
+            <div class="relative flex items-center cursor-pointer">
                 <div className="flex-grow" style={{ borderTop: '5px solid gray' }}></div>
                     <span class="flex-shrink text-gray-400 ml-5 mr-5"> <h3 class="mb-1 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Load More</span></h3>
