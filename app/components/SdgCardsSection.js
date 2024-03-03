@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function MainSdgCard() {
     return (
@@ -51,9 +54,9 @@ function SecondarySdgCard() {
 
 export default function SdgCardsSection() {
     return (
-        <div className="container w-full my-4 flex flex-col gap-6">
+        <AnimationOnScroll animateIn="animate__zoomIn" className="container w-full my-4 flex flex-col gap-6">
             <MainSdgCard />
             <SecondarySdgCard />
-        </div>
+        </AnimationOnScroll>
     );
 }
