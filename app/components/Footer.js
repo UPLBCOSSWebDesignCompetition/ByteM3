@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="text-center text-xl font-bebas uppercase">&copy;2024 BYTEM3! ALL RIGHTS RESERVED</p>
+            <p className="text-center text-xl font-bebas uppercase">&copy; 2024 BYTEM3! ALL RIGHTS RESERVED</p>
         </footer>
     );
 };

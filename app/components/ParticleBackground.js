@@ -17,7 +17,6 @@ function ParticleBackground() {
     }, []);
 
     const handleParticlesLoaded = (container) => {
-        console.log(container);
     };
     
     if (init) {

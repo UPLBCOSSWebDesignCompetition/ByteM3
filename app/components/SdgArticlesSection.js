@@ -43,10 +43,10 @@ function ArticleComponent() {
                             className="my-10">
                             <div className="container flex-row gap-10 grid lg:grid-cols-2">
                                 <div className="image cursor-pointer">
-                                    <img
+                                    <Image
                                         className = "rounded-3xl"
                                         src={article.article_image}
-                                        alt="Plant photo"
+                                        alt={`${article.article_title} preview image`}
                                         width={750}
                                         height={500}
                                     />
