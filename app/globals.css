@@ -19,3 +19,15 @@ body {
     grid-area: 1/1;
   }
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 0;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
