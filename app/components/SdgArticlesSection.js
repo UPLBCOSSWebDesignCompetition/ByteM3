@@ -46,8 +46,8 @@ function ArticleComponent() {
                                     />
                                 </div>
                                 <div class="text">
-                                    <div className="article-title  my-3">
-                                        <h2 class="text-4xl font-extrabold  dark:text-white">
+                                    <div className="article-title mb-3">
+                                        <h2 class="text-3xl font-extrabold  dark:text-white">
                                             <a href="#">{article.article_title}</a>
                                         </h2>
                                     </div>
