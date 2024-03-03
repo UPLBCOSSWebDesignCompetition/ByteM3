@@ -2,6 +2,7 @@ import SdgCardsSection from "./components/SdgCardsSection";
 import TickerSection from "./components/TickerSection";
 import SdgArticlesSection from "./components/SdgArticlesSection";
 import Footer from "./components/Footer";
+import "animate.css/animate.min.css";
 
 export default function Home() {
   return (
