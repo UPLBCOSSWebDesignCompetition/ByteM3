@@ -66,7 +66,7 @@ function ArticleComponent() {
                     return (
                         <article key={index} class="my-10">
                             <div class="container flex-row gap-10 grid lg:grid-cols-2">
-                                <div class="image">
+                                <div class="image cursor-pointer">
                                     <img className = "rounded-3xl"
                                         src={article.article_image}
                                         alt="Plant photo"
