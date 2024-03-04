@@ -30,7 +30,8 @@ function GlassCard(aProps) {
     const { count, label, bgImage } = aProps;
     return (
         <AnimationOnScroll
-            animateIn="animate__zoomIn" className="grid">
+            animateIn="animate__zoomIn"
+            className="grid">
             <div className="border-2 border-white/30 rounded-3xl p-5 backdrop-blur font-zen-dots grid-area-1 hover:backdrop-blur-none flex flex-col justify-end transition-all drop-shadow-xl hover:drop-shadow-md backdrop-brightness-75 cursor-pointer">
                 <div className="text-7xl">{count}</div>
                 <div className="text-2xl md:text-4xl uppercase">{label}</div>
