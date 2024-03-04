@@ -7,10 +7,13 @@ function FooterMenuItem(aProps) {
     const { label, href } = aProps;
     return (
         <li>
-            <Link href={href} className="flex gap-5 group">
+            <Link
+                href={href}
+                className="flex gap-5 group">
                 <Image
                     className="absolute opacity-0 group-hover:opacity-100 transition-all"
                     src="/arrow-hex.svg"
+                    alt="footer menu item arrow"
                     width="32"
                     height="32"
                 />
@@ -37,7 +40,10 @@ function Footer() {
                     {
                         menuItems.map(function(aItem, aIndex) {
                             return (
-                                <FooterMenuItem label={aItem} href="#" key={aIndex} />
+                                <FooterMenuItem
+                                    label={aItem}
+                                    href="#"
+                                    key={aIndex} />
                             );
                         })
                     }
