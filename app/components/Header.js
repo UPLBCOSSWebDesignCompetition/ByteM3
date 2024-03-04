@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <header className="top-0 z-[20] mx-auto flex w-full justify-between pr-5 relative"> 
+        <header className="top-0 z-[20] mx-auto flex w-full justify-between pr-5 relative container">
             <Image
                 src="/logo3.svg"
                 alt="Byte M3 Logo"
