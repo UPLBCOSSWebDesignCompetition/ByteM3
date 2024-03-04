@@ -3,30 +3,32 @@
 import { useState, useEffect, useRef } from "react";
 
 function Cursor() {
-    const circles = [];
+    const [circleElements, setCircleElements] = useState([]);
     const circleRef = useRef([]);
 
     const colors = [
         "#ffffff"
     ];
 
-    for (let i = 0; i < 20; i++) {
-        circles.push(
-            <div
-                className="circle"
-                style={{
-                    backgroundColor: colors[i % colors.length],
-                    opacity: 0,
-                }}
-                x={0}
-                y={0}
-                key={i}
-                ref={ (el) => circleRef.current.push(el) }
-            ></div>
-        );
-    }
-
     useEffect(() => {
+        let circles = [];
+        for (let i = 0; i < 20; i++) {
+            circles.push(
+                <div
+                    className="circle"
+                    style={{
+                        backgroundColor: colors[i % colors.length],
+                        opacity: 0,
+                    }}
+                    x={0}
+                    y={0}
+                    key={i}
+                    ref={ (el) => circleRef.current.push(el) }
+                ></div>
+            );
+        }
+        setCircleElements(circles);
+
         const coords = { x: 0, y: 0 };
         
         window.addEventListener("mousemove", function(e){
@@ -39,6 +41,10 @@ function Cursor() {
             let y = coords.y;
 
             circleRef.current.forEach(function (circle, index) {
+                if (!circle) {
+                    return;
+                }
+
                 circle.style.opacity = 1;
                 circle.style.left = x - 12 + "px";
                 circle.style.top = y - 12 + "px";
@@ -59,7 +65,7 @@ function Cursor() {
 
     return (
         <>
-            { circles }
+            { circleElements }
         </>
     );
 }
