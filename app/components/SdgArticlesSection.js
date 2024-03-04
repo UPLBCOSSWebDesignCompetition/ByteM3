@@ -38,7 +38,8 @@ function ArticleEntry(aProps) {
     const articleContent = data.article_description;
     return (
         <AnimationOnScroll
-            animateIn="animate__fadeInLeft">
+            animateIn="animate__fadeInLeft"
+            animateOut="animate__fadeOutLeft">
             <div
                 className="my-10">
                 <div className="container flex-row gap-10 grid lg:grid-cols-2">

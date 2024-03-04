@@ -7,6 +7,7 @@ function MainSdgCard() {
     return (
         <AnimationOnScroll
             animateIn="animate__zoomIn"
+            animateOut="animate__zoomOut"
             className="container bg-sky-900 px-8 py-8 rounded-3xl flex flex-col">
             <div className="flex justify-between mb-8">
                 <div className="text-6xl font-bebas">
@@ -31,6 +32,7 @@ function GlassCard(aProps) {
     return (
         <AnimationOnScroll
             animateIn="animate__zoomIn"
+            animateOut="animate__zoomOut"
             className="grid">
             <div className="border-2 border-white/30 rounded-3xl p-5 backdrop-blur font-zen-dots grid-area-1 hover:backdrop-blur-none flex flex-col justify-end transition-all drop-shadow-xl hover:drop-shadow-md backdrop-brightness-75 cursor-pointer">
                 <div className="text-7xl">{count}</div>
