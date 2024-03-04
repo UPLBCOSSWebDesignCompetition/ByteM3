@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-function MainHero(){
-    return(
+function MainHero() {
+    return (
         <div className="hero-section flex justify-center items-center my-20 animate__animated animate__zoomIn">
             <Image
                 src="/sdg-logo.png"
@@ -14,8 +14,8 @@ function MainHero(){
     );
 }
 
-export default function HeroSection(){
-    return(
+export default function HeroSection() {
+    return (
         <div className="hero-main">
             <MainHero />
         </div>

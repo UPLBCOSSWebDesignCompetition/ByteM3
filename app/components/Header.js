@@ -2,22 +2,21 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <header className="top-0 z-[20] mx-auto flex w-full justify-between pr-5 relative container">
+        <header className="mx-auto flex justify-between pr-5 relative container">
             <Image
                 src="/logo3.svg"
                 alt="Byte M3 Logo"
                 width={75}
-                height={75} />
-            <div
-                className="flex-grow self-center mr-5"
-                style={{ borderTop: "5px solid white" }}></div>
+                height={75}
+            />
+            <div className="flex-grow self-center mr-5 border-t-4 border-white">
+            </div>
             <Image
                 src="/menu.svg"
                 alt="Menu"
                 width={37}
-                height={37}/>
-            <div className="z-50 fixed top-[90px] right-[335px] cursor-pointer">
-            </div>
+                height={37}
+            />
         </header>
     );
 };

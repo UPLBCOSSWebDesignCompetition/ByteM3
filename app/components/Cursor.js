@@ -6,11 +6,11 @@ function Cursor() {
     const [circleElements, setCircleElements] = useState([]);
     const circleRef = useRef([]);
 
-    const colors = [
-        "#ffffff"
-    ];
-
     useEffect(() => {
+        const colors = [
+            "#ffffff"
+        ];
+
         let circles = [];
         for (let i = 0; i < 20; i++) {
             circles.push(
