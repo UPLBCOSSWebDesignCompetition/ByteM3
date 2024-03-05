@@ -52,20 +52,20 @@ function SecondarySdgCard() {
             <GlassCard
                 count="230"
                 label="events"
-                bgImage="/public/events.jpg" />
+                bgImage="/events.jpg" />
             <div className="container flex flex-col gap-4">
                 <GlassCard
                     count="2183"
                     label="actions"
-                    bgImage="/public/actions.jpg" />
+                    bgImage="/actions.jpg" />
                 <GlassCard
                     count="74"
                     label="publications"
-                    bgImage="/public/publications.jpg" />
+                    bgImage="/publications.jpg" />
                 <GlassCard
                     count="19"
                     label="targets"
-                    bgImage="/public/targets2.jpg" />
+                    bgImage="/targets2.jpg" />
             </div>
         </div>
     );
