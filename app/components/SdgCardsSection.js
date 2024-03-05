@@ -11,7 +11,7 @@ function MainSdgCard() {
             className="container bg-sky-900 px-8 py-8 rounded-3xl flex flex-col">
             <div className="flex justify-between mb-8">
                 <div className="text-6xl font-bebas">
-                17
+                    17
                 </div>
                 <Image
                     src="/sdg-17-logo.svg"
@@ -52,20 +52,20 @@ function SecondarySdgCard() {
             <GlassCard
                 count="230"
                 label="events"
-                bgImage="/events.jpg" />
+                bgImage="../../public/events.jpg" />
             <div className="container flex flex-col gap-4">
                 <GlassCard
                     count="2183"
                     label="actions"
-                    bgImage="/actions.jpg" />
+                    bgImage="../../public/actions.jpg" />
                 <GlassCard
                     count="74"
                     label="publications"
-                    bgImage="/publications.jpg" />
+                    bgImage="../../public/publications.jpg" />
                 <GlassCard
                     count="19"
                     label="targets"
-                    bgImage="/targets2.jpg" />
+                    bgImage="../../public/targets2.jpg" />
             </div>
         </div>
     );
