@@ -1,0 +1,1 @@
+"use strict";exports.id=7226,exports.ids=[7226],exports.modules={7226:(t,e,a)=>{a.d(e,{loadExternalAttractInteraction:()=>n});async function n(t,e=!0){await t.addInteractor("externalAttract",async e=>{let{Attractor:n}=await a.e(7962).then(a.bind(a,7962));return new n(t,e)},e)}}};

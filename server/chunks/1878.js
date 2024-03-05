@@ -1,0 +1,1 @@
+"use strict";exports.id=1878,exports.ids=[1878],exports.modules={1878:(t,e,a)=>{a.d(e,{loadRotateUpdater:()=>d});async function d(t,e=!0){await t.addParticleUpdater("rotate",async t=>{let{RotateUpdater:e}=await a.e(3359).then(a.bind(a,3359));return new e(t)},e)}}};

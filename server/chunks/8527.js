@@ -1,0 +1,1 @@
+"use strict";exports.id=8527,exports.ids=[8527],exports.modules={8527:(t,e,r)=>{r.d(e,{loadStrokeColorUpdater:()=>o});async function o(t,e=!0){await t.addParticleUpdater("strokeColor",async t=>{let{StrokeColorUpdater:e}=await r.e(1235).then(r.bind(r,1235));return new e(t)},e)}}};

@@ -1,0 +1,1 @@
+"use strict";exports.id=5044,exports.ids=[5044],exports.modules={5044:(e,t,n)=>{n.d(t,{loadExternalBounceInteraction:()=>a});async function a(e,t=!0){await e.addInteractor("externalBounce",async e=>{let{Bouncer:t}=await n.e(7956).then(n.bind(n,7956));return new t(e)},t)}}};

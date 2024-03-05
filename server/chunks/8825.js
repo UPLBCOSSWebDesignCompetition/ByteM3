@@ -1,0 +1,1 @@
+"use strict";exports.id=8825,exports.ids=[8825],exports.modules={8825:(e,t,a)=>{a.d(t,{loadLineShape:()=>i});async function i(e,t=!0){let{LineDrawer:i}=await a.e(4724).then(a.bind(a,4724));await e.addShape("line",new i,t)}}};

@@ -1,0 +1,1 @@
+"use strict";exports.id=4724,exports.ids=[4724],exports.modules={4724:(e,t,s)=>{s.d(t,{LineDrawer:()=>o});class o{draw(e){!function(e){let{context:t,particle:s,radius:o}=e,r=s.shapeData;t.moveTo(-o,0),t.lineTo(o,0),t.lineCap=r?.cap??"butt"}(e)}getSidesCount(){return 1}}}};

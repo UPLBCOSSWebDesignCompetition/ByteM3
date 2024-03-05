@@ -1,0 +1,1 @@
+"use strict";exports.id=4319,exports.ids=[4319],exports.modules={4319:(t,e,n)=>{n.d(e,{loadLinksInteraction:()=>s});async function s(t,e=!0){await t.addInteractor("particlesLinks",async t=>{let{Linker:e}=await n.e(6239).then(n.bind(n,6239));return new e(t)},e)}}};

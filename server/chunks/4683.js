@@ -1,0 +1,1 @@
+"use strict";exports.id=4683,exports.ids=[4683],exports.modules={4683:(t,e,n)=>{n.d(e,{loadExternalSlowInteraction:()=>a});async function a(t,e=!0){await t.addInteractor("externalSlow",async t=>{let{Slower:e}=await n.e(5613).then(n.bind(n,5613));return new e(t)},e)}}};
