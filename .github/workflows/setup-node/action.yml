@@ -23,4 +23,4 @@ runs:
 
     - name: Build with Next.js 🏗️
       shell: bash
-      run: npm run build -- --basePath=/ByteM3
+      run: npm run build
